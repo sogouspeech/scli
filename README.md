@@ -10,7 +10,8 @@
 v1.2.0：
 - 语音识别、合成支持 pipe：
 ```bash
-$ fmedia --record --format=int16 --rate=16000 --channels=mono --out=@stdout.wav 2>/dev/null | scli asr streaming-recognize --quiet                                                              {"results":[{"alternatives":[{"transcript":"今天"}]}]}
+$ fmedia --record --format=int16 --rate=16000 --channels=mono --out=@stdout.wav 2>/dev/null | scli asr streaming-recognize --quiet
+{"results":[{"alternatives":[{"transcript":"今天"}]}]}
 {"results":[{"alternatives":[{"transcript":"今天天气"}]}]}
 {"results":[{"alternatives":[{"transcript":"今天天气不错。","confidence":1}],"is_final":true}]}
 {"results":[{"alternatives":[{"transcript":"明天"}]}]}
